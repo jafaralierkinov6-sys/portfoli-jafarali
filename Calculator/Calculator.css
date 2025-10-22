@@ -1,0 +1,129 @@
+/* Base styles */
+.calculator-container {
+  max-width: 350px;
+  margin: 50px auto;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.calculator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.calculator-display {
+  width: 100%;
+  padding: 15px;
+  font-size: 24px;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.calc-btn {
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.calc-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.equals {
+  grid-column: span 2;
+  background-color: #0079ff;
+  color: #fff;
+}
+
+.clear {
+  background-color: #ff4b5c;
+  color: #fff;
+}
+
+/* Light mode */
+.light {
+  background-color: #f9f5f5;
+  color: #1e2a47;
+}
+
+.light .calculator-display {
+  background-color: #ffffff;
+  color: #1e2a47;
+}
+
+.light .calc-btn {
+  background-color: #e0e0e0;
+  color: #1e2a47;
+}
+
+.light .theme-toggle {
+  background-color: #0079ff;
+  color: #fff;
+}
+.theme-toggle{
+  max-width: 100px;
+}
+/* Dark mode */
+.dark {
+  background-color: #141d2f;
+  color: #ffffff;
+}
+
+.dark .calculator-display {
+  background-color: #1e2a47;
+  color: #ffffff;
+}
+
+.dark .calc-btn {
+  background-color: #1e2a47;
+  color: #ffffff;
+}
+
+.dark .theme-toggle {
+  background-color: #0079ff;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .calculator-container {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .calculator-display {
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  .calc-btn {
+    padding: 15px;
+    font-size: 18px;
+  }
+}

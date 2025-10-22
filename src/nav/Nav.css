@@ -1,0 +1,97 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2.5rem;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  max-width: 1320px; 
+  margin: 0 auto;
+   box-shadow: 0 2px 15px rgba(0, 240, 255, 0.1);
+   transform: translateY(4px);
+   max-width: 1400px;
+}
+
+
+.dark .navbar {
+  background: rgba(13, 17, 23, 0.8);
+  color: #c9d1d9;
+}
+
+.light .navbar {
+  background: rgba(255, 255, 255, 0.7);
+  color: #0d1117;
+}
+
+/* === Logo === */
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  border: none;
+  color: #00f0ff;
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.7);
+  cursor: pointer;
+  transition: text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 12px rgba(0, 240, 255, 1);
+}
+
+/* === Navigation Links === */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* --- Dark mode ranglari --- */
+.dark .nav-item {
+  color: #c9d1d9;
+}
+
+.light .nav-item {
+  color: #0d1117;
+}
+
+/* === Hover efekti (neon chiziq pastida) === */
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #00f0ff;
+  box-shadow: 0 0 8px #00f0ff;
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+/* === Responsiv (mobil) === */
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
