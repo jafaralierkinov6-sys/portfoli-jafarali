@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Github, ExternalLink, Code } from "lucide-react";
+import { Github, ExternalLink, Code, Play } from "lucide-react";
 import { CalculatorDemo, TodoDemo, ClockDemo, StopwatchDemo, GitHubDemo, MovieDemo } from "@/components/demos/ProjectDemos";
 
 export default function Projects() {
