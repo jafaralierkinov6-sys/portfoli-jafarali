@@ -1,0 +1,125 @@
+✅ Updated Prompt for Modern Developer Portfolio (React + Tailwind + Interactive Projects)
+
+GOAL: Build a fully functional frontend-only developer portfolio using React, React Router, Tailwind CSS, TypeScript/JS, where all project demos are interactive and visually accessible, no backend required.
+
+GENERAL REQUIREMENTS
+
+Modern professional UI/UX design with glassmorphism / gradients
+
+Fully responsive (mobile, tablet, desktop)
+
+Light / Dark mode toggle
+
+Multi-language support: Uzbek, English, Russian
+
+Smooth animations, hover effects, and page transitions
+
+Clean component-based architecture
+
+Use React Context API for global state
+
+Use useRef for form validation in Contact page
+
+Use React Router for page navigation
+
+Each page has a beautiful background image
+
+PAGES
+
+HOME PAGE
+
+Hero section (<h1> + <p>)
+
+Navigation menu
+
+Buttons: “View Projects” and “Contact”
+
+Animated interactive background
+
+ABOUT PAGE
+
+Developer biography
+
+Skills & technologies
+
+Timeline / experience
+
+Modern card-based design
+
+PROJECTS PAGE (interactive & visual)
+
+All projects displayed as cards with hover effects
+
+Clicking a project opens a modal or separate page with live demo
+
+Project card includes:
+
+Project image
+
+Short description
+
+Technologies used
+
+Buttons: “View Demo” / “GitHub”
+
+Example projects:
+
+GitHub User Search App → optional API demo, interactive search
+
+Calculator → fully functional calculator UI
+
+Todo List App → add, edit, delete, mark tasks complete
+
+Movie Website → static movie info or optional API demo
+
+Solar System Website → interactive planets, hover info
+
+Stopwatch & Pomodoro Timer → functional timers
+
+Digital Clock → real-time working clock
+
+Flags of the World Website → searchable/filterable country flags
+
+Tabs and Slider Project → interactive tabs + image slider
+
+SKILLS PAGE
+
+Animated skill cards with progress bars
+
+Include React, JS, Tailwind CSS, HTML, CSS, GitHub
+
+SERVICES PAGE
+
+Frontend Development, React Development, UI/UX Design, Website Development
+
+RESUME PAGE
+
+Education, skills, experience
+
+Download CV button
+
+BLOG PAGE (optional)
+
+Static blog layout for sharing development articles
+
+CONTACT PAGE
+
+Form using useRef for validation
+
+Fields: Name, Email, Message
+
+Shows errors and success messages
+
+DESIGN
+
+Tailwind CSS for modern styling
+
+Glassmorphism, gradients, hover animations
+
+Beautiful typography and spacing
+
+Interactive project cards: hover transforms, click opens modal/demo
+
+Smooth scroll and page transitions
+
+Visual demo for each project (interactive directly on the page)

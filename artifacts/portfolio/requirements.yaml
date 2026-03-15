@@ -1,0 +1,17 @@
+packages:
+  "framer-motion": "Required for stunning page transitions, hover effects, and animated interactive components in the portfolio."
+  "date-fns": "Required for formatting dates in the digital clock, stopwatch, and blog sections."
+
+images:
+  - path: "artifacts/portfolio/public/images/profile-avatar.png"
+    description: "A highly stylized, professional digital avatar of a modern software developer. Cyberpunk or sleek synthwave aesthetic with subtle glowing neon cyan and purple accents. Clean, transparent or very dark background, high resolution, 3D rendered style."
+    aspect_ratio: "1:1"
+  - path: "artifacts/portfolio/public/images/hero-bg.png"
+    description: "An abstract, premium dark glassmorphism background. Deep midnight blues and rich purples with soft glowing iridescent light leaks. Smooth geometric shapes with frosted glass texture."
+    aspect_ratio: "16:9"
+
+notes:
+  - This is a frontend-only portfolio application with no backend requirements.
+  - Using React Query solely for the GitHub API search interactive demo.
+  - Theme and Language state will be managed via React Context.
+  - Form validation relies on standard React refs (useRef) as requested.
