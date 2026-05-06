@@ -1,0 +1,69 @@
+.projects-container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+
+.project-card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border-top: 4px solid transparent; 
+    transition: all 0.3s ease; 
+    cursor: pointer;
+}
+
+
+.project-card:hover {
+    border-top-color: #00bcd4;
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+
+.project-image {
+    height: 180px; 
+    border-radius: 4px;
+    margin-bottom: 15px;
+    /* Agar rasmlar ishlatilsa: */
+    /* background-size: cover; 
+    background-position: center; */
+}
+
+/* Har bir loyiha uchun alohida rasm fonlari (agar kerak bo'lsa) */
+/* .calculator-bg { background-image: url('path/to/calculator.jpg'); } */
+/* .todo-bg { background-image: url('path/to/todo.jpg'); } */
+/* ... */
+
+
+.project-title {
+    font-size: 1.5rem; 
+    color: #00bcd4; 
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.project-description {
+    font-size: 0.9rem; 
+    color: #aaaaaa;
+}
+
+
+@media (max-width: 768px) {
+    .projects-container {
+        /* Kichik ekranlarda 2 ustunga o'tish */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}

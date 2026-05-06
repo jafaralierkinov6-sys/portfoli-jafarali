@@ -1,0 +1,98 @@
+.aboutme-section {
+  color: #c9d1d9;
+  padding: 4rem 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.aboutme-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.aboutme-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.aboutme-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #58a6ff;
+}
+
+.aboutme-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.aboutme-text h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #79c0ff;
+}
+
+.aboutme-text ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.aboutme-text li {
+  margin-bottom: 0.5rem;
+}
+
+.aboutme-btn {
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #58a6ff;
+  color: #0d1117;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.aboutme-btn:hover {
+  background-color: #1f6feb;
+  color: #ffffff;
+}
+
+.aboutme-image {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutme-image .Img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutme-image .Img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(88, 166, 255, 0.8);
+}
+
+/* Responsiv */
+@media (max-width: 768px) {
+  .aboutme-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .aboutme-image .Img {
+    width: 200px;
+    height: 200px;
+  }
+}

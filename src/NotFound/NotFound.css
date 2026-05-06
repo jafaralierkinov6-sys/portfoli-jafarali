@@ -1,0 +1,42 @@
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  color: #c9d1d9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.notfound-container h1 {
+  font-size: 6rem;
+  color: #58a6ff;
+  margin-bottom: 1rem;
+}
+
+.notfound-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.notfound-container p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.home-btn {
+  padding: 0.7rem 1.5rem;
+  background-color: #58a6ff;
+  color: #0d1117;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: #1f6feb;
+  color: #fff;
+}

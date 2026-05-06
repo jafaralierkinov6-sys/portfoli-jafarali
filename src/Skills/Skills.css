@@ -1,0 +1,122 @@
+.skills-section {
+  color: #c9d1d9;
+  padding: 3rem 1rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.light {
+  background: #ffffff;
+  color: #0d1117;
+    background: #0d1117;
+}
+
+.dark {
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.progress-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+.skill-card {
+  /* background-color: #161b22; */
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 120px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.7),
+              0 0 50px rgba(0, 240, 255, 0.4);
+}
+
+.skill-card:hover svg,
+.skill-card:hover span {
+  color: #00ffff;
+  text-shadow: 0 0 8px #00f0ff;
+}
+
+.neon-line {
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 4px;
+  background: #00f0ff;
+  box-shadow: 0 0 8px #00f0ff;
+  border-radius: 50px;
+  transition: width 0.4s ease;
+}
+
+.skill-card:hover .neon-line {
+  width: 60%;
+}
+
+
+/* ====== Title ====== */
+.skills-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 2rem;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.8);
+}
+
+/* ====== Progress Rings ====== */
+.progress-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.progress-ring {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.progress-ring svg {
+  transform: rotate(-90deg);
+}
+
+.ring-progress {
+  transition: stroke-dashoffset 1s ease;
+  filter: drop-shadow(0 0 6px #00f0ff88);
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #00f0ff;
+}

@@ -1,0 +1,108 @@
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #161b22;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00f0ff55;
+  margin-top: 100px;
+  color: #c9d1d9;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light form {
+  background-color: #fff;
+  color: #222;
+  box-shadow: 0 0 15px #00f0ff33;
+}
+
+form div {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  color: inherit;
+}
+
+input, textarea {
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1.5px solid #00f0ff;
+  background-color: transparent;
+  color: inherit;
+  resize: vertical;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #0ff;
+  background-color: #0ff2;
+}
+
+.light input, 
+.light textarea {
+  background-color: #f7f9fc;
+  border-color: #00aaff;
+  color: #222;
+}
+
+.light input:focus, 
+.light textarea:focus {
+  background-color: #d7f0ff;
+  border-color: #0077cc;
+}
+
+textarea {
+  min-height: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  background-color: #00f0ff;
+  color: #0d1117;
+  border: none;
+  padding: 0.75rem 1.8rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 12px #00f0ffaa;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #00c5d9;
+}
+
+.light button {
+  background-color: #2383b8;
+  color: #e0e6f0;
+  box-shadow: 0 0 12px #2383b8aa;
+}
+
+.light button:hover {
+  background-color: #005a9e;
+}
+
+p {
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #00f0ff;
+}
+
+.light p {
+  color: #2383b8;
+}
+.contact{
+  transform: translateX(300px);
+}
