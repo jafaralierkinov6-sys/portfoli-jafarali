@@ -9,30 +9,30 @@ export default function Blog() {
   const articles = [
     {
       id: 1,
-      title: "Mastering React 19 Actions and Hooks",
-      excerpt: "Deep dive into the new concurrent features in React 19, including useTransition, useActionState, and the new use hook.",
+      title: t('blog1Title'),
+      excerpt: t('blog1Excerpt'),
       date: "Oct 24, 2024",
-      readTime: "5 min read",
+      readTime: `5 ${t('minRead')}`,
       category: "React",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=400&fit=crop" // react/code
+      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=400&fit=crop"
     },
     {
       id: 2,
-      title: "Building Glassmorphism UIs with Tailwind v4",
-      excerpt: "Learn how to use the latest Tailwind CSS v4 features to create stunning, performant glassmorphism layouts.",
+      title: t('blog2Title'),
+      excerpt: t('blog2Excerpt'),
       date: "Nov 12, 2024",
-      readTime: "8 min read",
+      readTime: `8 ${t('minRead')}`,
       category: "CSS",
-      image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&h=400&fit=crop" // retro/colors
+      image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&h=400&fit=crop"
     },
     {
       id: 3,
-      title: "Why TypeScript is non-negotiable in 2025",
-      excerpt: "Exploring the long-term benefits of strong typing in massive monorepo environments and how it prevents runtime errors.",
+      title: t('blog3Title'),
+      excerpt: t('blog3Excerpt'),
       date: "Jan 05, 2025",
-      readTime: "6 min read",
+      readTime: `6 ${t('minRead')}`,
       category: "TypeScript",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop" // code/laptop
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop"
     }
   ];
 
@@ -46,7 +46,7 @@ export default function Blog() {
         <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">{t('blog')}</h1>
         <div className="w-24 h-1.5 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-6"></div>
         <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-          Thoughts, learnings, and tutorials about modern web development.
+          {t('blogSubtitle')}
         </p>
       </motion.div>
 
@@ -86,7 +86,7 @@ export default function Blog() {
               </p>
               
               <Button variant="ghost" className="self-start text-primary p-0 hover:bg-transparent hover:text-primary/80 group/btn">
-                Read Article <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                {t('readArticle')} <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
               </Button>
             </div>
           </motion.article>

@@ -8,29 +8,29 @@ export default function Services() {
   const services = [
     {
       icon: <MonitorSmartphone className="w-10 h-10" />,
-      title: "Frontend Development",
-      desc: "Building responsive, performant, and accessible user interfaces using modern web standards and frameworks like React.",
+      title: t('serviceFrontend'),
+      desc: t('serviceFrontendDesc'),
       color: "text-blue-500",
       bg: "bg-blue-500/10"
     },
     {
       icon: <Code className="w-10 h-10" />,
-      title: "Full Stack Solutions",
-      desc: "End-to-end application development with robust APIs, databases, and seamless frontend integrations.",
+      title: t('serviceFullstack'),
+      desc: t('serviceFullstackDesc'),
       color: "text-purple-500",
       bg: "bg-purple-500/10"
     },
     {
       icon: <Palette className="w-10 h-10" />,
-      title: "UI/UX Implementation",
-      desc: "Translating Figma designs into pixel-perfect code with smooth animations and interactive elements.",
+      title: t('serviceUiux'),
+      desc: t('serviceUiuxDesc'),
       color: "text-pink-500",
       bg: "bg-pink-500/10"
     },
     {
       icon: <Zap className="w-10 h-10" />,
-      title: "Performance Optimization",
-      desc: "Auditing and improving web applications for maximum speed, SEO, and Core Web Vitals scores.",
+      title: t('servicePerformance'),
+      desc: t('servicePerformanceDesc'),
       color: "text-amber-500",
       bg: "bg-amber-500/10"
     }
@@ -46,7 +46,7 @@ export default function Services() {
         <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">{t('services')}</h1>
         <div className="w-24 h-1.5 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-6"></div>
         <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-          Comprehensive digital solutions tailored to your business needs.
+          {t('servicesSubtitle')}
         </p>
       </motion.div>
 

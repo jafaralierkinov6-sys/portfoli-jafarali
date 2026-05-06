@@ -25,7 +25,7 @@ export default function Skills() {
         <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">{t('skills')}</h1>
         <div className="w-24 h-1.5 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-6"></div>
         <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-          My technical expertise and proficiency levels in modern web development technologies.
+          {t('skillsSubtitle')}
         </p>
       </motion.div>
 
@@ -60,9 +60,9 @@ export default function Skills() {
         transition={{ delay: 1 }}
         className="mt-20 max-w-4xl mx-auto glass-panel p-8 rounded-3xl text-center border border-primary/20 bg-primary/5"
       >
-        <h3 className="text-2xl font-display font-bold mb-4">Always Learning</h3>
+        <h3 className="text-2xl font-display font-bold mb-4">{t('alwaysLearning')}</h3>
         <p className="text-muted-foreground text-lg">
-          The tech landscape moves fast. Currently exploring WebGL, Rust, and AI Integration patterns to expand my horizon and build next-generation applications.
+          {t('alwaysLearningDesc')}
         </p>
       </motion.div>
     </div>

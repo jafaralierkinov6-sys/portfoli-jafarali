@@ -73,7 +73,7 @@ export default function Projects() {
         <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">{t('projects')}</h1>
         <div className="w-24 h-1.5 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-6"></div>
         <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-          Click on any project card to open a live interactive demo directly in the browser. No reloading required.
+          {t('projectsSubtitle')}
         </p>
       </motion.div>
 
@@ -93,7 +93,7 @@ export default function Projects() {
               
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40 backdrop-blur-sm">
                 <span className="px-6 py-3 rounded-full bg-primary/90 text-white font-medium shadow-lg flex items-center gap-2">
-                  <Play className="w-4 h-4" /> Live Demo
+                  <Play className="w-4 h-4" /> {t('liveDemo')}
                 </span>
               </div>
               
@@ -130,10 +130,10 @@ export default function Projects() {
           
           <div className="p-6 pt-0 flex justify-end gap-3">
             <Button variant="outline" className="rounded-full">
-              <Github className="w-4 h-4 mr-2" /> Source Code
+              <Github className="w-4 h-4 mr-2" /> {t('sourceCode')}
             </Button>
             <Button className="rounded-full">
-              <ExternalLink className="w-4 h-4 mr-2" /> Open Fullscreen
+              <ExternalLink className="w-4 h-4 mr-2" /> {t('openFullscreen')}
             </Button>
           </div>
         </DialogContent>

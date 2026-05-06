@@ -29,19 +29,19 @@ export default function Home() {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 border border-primary/20 backdrop-blur-md">
             <Terminal className="w-4 h-4" />
-            <span>Open to new opportunities</span>
+            <span>{t('openToOpportunities')}</span>
           </div>
           
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-display font-extrabold tracking-tight mb-4">
-            {t('greeting')} <span className="text-gradient">Alex Dev</span>
+            {t('greeting')} <span className="text-gradient">JAFARALI ERKINOV</span>
           </h1>
           
           <h2 className="text-2xl sm:text-3xl text-muted-foreground font-medium mb-6">
-            {t('role')} & UI/UX Enthusiast
+            {t('role')} {t('uiuxEnthusiast')}
           </h2>
           
           <p className="text-lg text-foreground/70 max-w-xl mb-10 leading-relaxed">
-            I build exceptional and accessible digital experiences for the web. Turning complex problems into beautiful, intuitive designs.
+            {t('homeDescription')}
           </p>
           
           <div className="flex flex-wrap gap-4">
@@ -85,7 +85,7 @@ export default function Home() {
             >
               <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-500 text-xl font-bold">R</div>
               <div>
-                <p className="text-xs text-muted-foreground font-medium">Framework</p>
+                <p className="text-xs text-muted-foreground font-medium">{t('framework')}</p>
                 <p className="text-sm font-bold">React 19</p>
               </div>
             </motion.div>
@@ -97,7 +97,7 @@ export default function Home() {
             >
               <div className="w-10 h-10 rounded-full bg-cyan-500/20 flex items-center justify-center text-cyan-500 text-xl font-bold">T</div>
               <div>
-                <p className="text-xs text-muted-foreground font-medium">Styling</p>
+                <p className="text-xs text-muted-foreground font-medium">{t('styling')}</p>
                 <p className="text-sm font-bold">Tailwind v4</p>
               </div>
             </motion.div>

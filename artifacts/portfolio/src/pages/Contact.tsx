@@ -44,7 +44,7 @@ export default function Contact() {
         <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">{t('contact')}</h1>
         <div className="w-24 h-1.5 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-6"></div>
         <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-          Have a project in mind? Let's work together to build something great.
+          {t('contactSubtitle')}
         </p>
       </motion.div>
 
@@ -56,7 +56,7 @@ export default function Contact() {
           className="lg:col-span-5 space-y-8"
         >
           <div className="glass-card p-8 rounded-3xl">
-            <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
+            <h3 className="text-2xl font-bold mb-6">{t('getInTouch')}</h3>
             
             <div className="space-y-6">
               <div className="flex items-center gap-4">
@@ -64,7 +64,7 @@ export default function Contact() {
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground font-medium">Email</p>
+                  <p className="text-sm text-muted-foreground font-medium">{t('emailLabel')}</p>
                   <p className="text-foreground font-medium">hello@devportfolio.com</p>
                 </div>
               </div>
@@ -74,7 +74,7 @@ export default function Contact() {
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground font-medium">Phone</p>
+                  <p className="text-sm text-muted-foreground font-medium">{t('phoneLabel')}</p>
                   <p className="text-foreground font-medium">+1 (555) 123-4567</p>
                 </div>
               </div>
@@ -84,7 +84,7 @@ export default function Contact() {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground font-medium">Location</p>
+                  <p className="text-sm text-muted-foreground font-medium">{t('locationLabel')}</p>
                   <p className="text-foreground font-medium">San Francisco, CA</p>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default function Contact() {
                   <label className="text-sm font-medium text-foreground">{t('name')}</label>
                   <Input 
                     ref={nameRef}
-                    placeholder="John Doe" 
+                    placeholder={t('placeholderName')} 
                     className="bg-background/50 border-border h-12 rounded-xl focus-visible:ring-primary" 
                   />
                 </div>
@@ -126,7 +126,7 @@ export default function Contact() {
                   <Input 
                     ref={emailRef}
                     type="email" 
-                    placeholder="john@example.com" 
+                    placeholder={t('placeholderEmail')} 
                     className="bg-background/50 border-border h-12 rounded-xl focus-visible:ring-primary" 
                   />
                 </div>
@@ -136,7 +136,7 @@ export default function Contact() {
                 <label className="text-sm font-medium text-foreground">{t('message')}</label>
                 <Textarea 
                   ref={msgRef}
-                  placeholder="How can I help you?" 
+                  placeholder={t('placeholderMessage')} 
                   className="bg-background/50 border-border min-h-[150px] rounded-xl focus-visible:ring-primary resize-none" 
                 />
               </div>

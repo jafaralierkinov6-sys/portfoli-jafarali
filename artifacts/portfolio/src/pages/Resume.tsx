@@ -42,7 +42,7 @@ export default function Resume() {
           <div className="w-24 h-1.5 bg-gradient-to-r from-primary to-accent rounded-full"></div>
         </div>
         <Button size="lg" className="rounded-full shrink-0">
-          <Download className="w-5 h-5 mr-2" /> Download Full CV
+          <Download className="w-5 h-5 mr-2" /> {t('downloadFullCv')}
         </Button>
       </motion.div>
 
@@ -51,7 +51,7 @@ export default function Resume() {
         <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }}>
           <div className="flex items-center gap-3 mb-8">
             <div className="p-3 rounded-xl bg-primary/20 text-primary"><Briefcase className="w-6 h-6" /></div>
-            <h2 className="text-3xl font-display font-bold">Experience</h2>
+            <h2 className="text-3xl font-display font-bold">{t('experience')}</h2>
           </div>
           
           <div className="relative pl-8 space-y-12 before:absolute before:inset-0 before:ml-[11px] before:w-[2px] before:bg-border">
@@ -73,7 +73,7 @@ export default function Resume() {
         <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.4 }}>
           <div className="flex items-center gap-3 mb-8">
             <div className="p-3 rounded-xl bg-secondary/20 text-secondary"><GraduationCap className="w-6 h-6" /></div>
-            <h2 className="text-3xl font-display font-bold">Education</h2>
+            <h2 className="text-3xl font-display font-bold">{t('education')}</h2>
           </div>
           
           <div className="relative pl-8 space-y-12 before:absolute before:inset-0 before:ml-[11px] before:w-[2px] before:bg-border">

@@ -7,10 +7,10 @@ export default function About() {
   const { t } = useLanguage();
 
   const features = [
-    { icon: <Code2 className="w-6 h-6 text-primary" />, title: "Clean Code", desc: "Writing maintainable, scalable, and modular architecture." },
-    { icon: <Layout className="w-6 h-6 text-accent" />, title: "Modern UI/UX", desc: "Crafting beautiful interfaces with pixel-perfect attention." },
-    { icon: <Database className="w-6 h-6 text-secondary" />, title: "Full Stack", desc: "Bridging the gap between robust backends and slick frontends." },
-    { icon: <BookOpen className="w-6 h-6 text-amber-500" />, title: "Fast Learner", desc: "Always exploring new technologies and modern frameworks." },
+    { icon: <Code2 className="w-6 h-6 text-primary" />, title: t('featureCleanCode'), desc: t('featureCleanCodeDesc') },
+    { icon: <Layout className="w-6 h-6 text-accent" />, title: t('featureModernUi'), desc: t('featureModernUiDesc') },
+    { icon: <Database className="w-6 h-6 text-secondary" />, title: t('featureFullStack'), desc: t('featureFullStackDesc') },
+    { icon: <BookOpen className="w-6 h-6 text-amber-500" />, title: t('featureFastLearner'), desc: t('featureFastLearnerDesc') },
   ];
 
   return (
@@ -40,8 +40,8 @@ export default function About() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80"></div>
             <div className="absolute bottom-6 left-6 right-6 glass-panel p-6 rounded-2xl">
-              <p className="text-2xl font-bold text-foreground">3+ Years</p>
-              <p className="text-sm text-muted-foreground">Professional Experience</p>
+              <p className="text-2xl font-bold text-foreground">{t('yearsExperience')}</p>
+              <p className="text-sm text-muted-foreground">{t('professionalExperience')}</p>
             </div>
           </div>
         </motion.div>
@@ -52,14 +52,14 @@ export default function About() {
           transition={{ delay: 0.3 }}
           className="lg:col-span-7"
         >
-          <h2 className="text-3xl font-display font-bold mb-6">Hello! I'm an innovative developer based in the internet.</h2>
+          <h2 className="text-3xl font-display font-bold mb-6">{t('aboutGreeting')}</h2>
           <p className="text-foreground/80 text-lg mb-6 leading-relaxed">
-            My journey in software development started back in 2020. Since then, I've had the privilege of building software for a start-up, a large corporation, and several freelance clients. 
+            {t('aboutJourney')}
           </p>
           <p className="text-foreground/80 text-lg mb-8 leading-relaxed">
-            I specialize in React ecosystem (React 19, Next.js, Vite), crafting responsive layouts with Tailwind CSS, and bringing interfaces to life with smooth animations. When I'm not coding, you can find me exploring open-source projects or writing technical blogs.
+            {t('aboutSpecialize')}
           </p>
-
+  
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
             {features.map((f, i) => (
               <div key={i} className="glass-card p-5 rounded-2xl flex items-start gap-4">
